@@ -3,12 +3,20 @@
   "price" : 1000,
   "rarity" : "Rare",
   "category" : "coin",
-  "inventoryIcon" : "ancientcoin.png",
   "description" : "How did this manage to get all the way out here.",
   "shortdescription" : "Ancient Coin",
   "itemTags" : [ "coin" ],
 
   "builder" : "/items/buildscripts/buildcoin.lua",
   "builderConfig" : [{
-    "nameGenerator" : "coinnames.config:nameGen"}]
+    "nameGenerator" : "coinnames.config:nameGen",
+    "animationParts" : {
+      "coin" : {
+        "path" : "money.png",
+        "paletteSwap" : true
+      }
+    },
+    "palette" : "/items/coins/coincolors",
+    "iconDrawables" : [ "coin" ]
+  }]
 }

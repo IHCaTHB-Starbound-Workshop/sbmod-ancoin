@@ -75,6 +75,24 @@ function build(directory, config, parameters, level, seed)
     end
   end
 
+  -- set gun part offsets
+  local partImagePositions = {}
+  if builderConfig.gunParts then
+    construct(config, "animationCustom", "animatedParts", "parts")
+    local imageOffset = {0,0}
+    local gunPartOffset = {0,0}
+    for _,part in ipairs(builderConfig.gunParts) do
+      local imageSize = root.imageSize(config.animationParts[part])
+      construct(config.animationCustom.animatedParts.parts, part, "properties")
+
+      imageOffset = vec2.add(imageOffset, {imageSize[1] / 2, 0})
+      config.animationCustom.animatedParts.parts[part].properties.offset = {config.baseOffset[1] + imageOffset[1] / 8, config.baseOffset[2]}
+      partImagePositions[part] = copy(imageOffset)
+      imageOffset = vec2.add(imageOffset, {imageSize[1] / 2, 0})
+    end
+    config.muzzleOffset = vec2.add(config.baseOffset, vec2.add(config.muzzleOffset or {0,0}, vec2.div(imageOffset, 8)))
+  end
+
   -- build inventory icon
   if not config.inventoryIcon and config.animationParts then
     config.inventoryIcon = jarray()
