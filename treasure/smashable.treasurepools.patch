@@ -1,0 +1,11 @@
+[
+{"op":"add","path":"/capsule/0/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/capsule/1/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/0/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/1/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/2/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/3/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/4/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/5/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}},
+{"op":"add","path":"/smashMoney/6/1/pool/-","value":{"weight":0.001,"item":"ancientcoin"}}
+]

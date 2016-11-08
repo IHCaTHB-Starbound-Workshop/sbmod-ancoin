@@ -1,0 +1,4 @@
+[
+{"op":"add","path":"/fossilBonusTreasure/0/1/pool/-","value":{"weight":0.2,"item":"ancientcoin"}},
+{"op":"add","path":"/fossilRareBonusTreasure/0/1/pool/-","value":{"weight":0.2,"item":"ancientcoin"}}
+]
