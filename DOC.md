@@ -1,4 +1,4 @@
-# sbmod-
+# sbmod-ancoin
 # documentation
 last updated yyyy-mm-dd for version 0.1
 

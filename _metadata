@@ -1,9 +1,9 @@
 {
   "author" : "IHCaTHB",
   "description" : "",
-  "friendlyName" : "",
+  "friendlyName" : "Ancient Coins",
   "includes" : [],
-  "name" : ".IHC",
+  "name" : "ANCOIN.IHC",
   "requires" : [],
   "version" : "0.1"
 }
